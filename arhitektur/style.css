@@ -1,0 +1,275 @@
+/*
+Theme Name: Arhitektur theme
+Author: Lovro Tabain
+Version: 1.0
+Description: Zadatak za bien.studio
+*/
+
+:root {
+    --highlight-color: 174, 55, 55;
+}
+
+/* Typography*/
+
+html {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+
+}
+
+/* Spacing */
+a.third{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* NAVIGATION */
+
+.top-nav{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.top-nav a{
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.top-nav a div{
+    font-size: 16px;
+}
+
+.top-nav .text-logo img{
+    border-right: none;
+}
+
+/* HERO */
+.hero-section{
+    height: 43vh;
+    align-content: center;
+    background-color: #000000;
+    margin-top: 5rem;
+}
+
+.hero-section h1{
+    color: #EA7D66;
+    font-size: 75px;
+    font-weight: 500;
+}
+
+/* SECTION */
+
+section.container{
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+
+div h4.full{
+    font-weight: 500;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+p.full{
+    margin-bottom: 0.7rem;
+}
+
+/* SINGLE */
+.single-header{
+    margin-top: 4rem;
+}
+
+.text-container{
+    max-width: 670px;
+}
+
+.text-container p{
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.single-header-text{
+    max-width: 800px;
+    margin-left: 6rem;
+}
+
+.single-header-text h2{
+    font-size: 2.7rem;
+    margin-top: 1.2rem;
+    font-weight: 500;
+}
+
+.single-header-text .architect-name{
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-size: 40px;
+}
+
+/* BUTTONS */
+
+.cta-btn {
+  background: #EA7D66;
+  border-radius: 0px;
+  border: 1px solid #EA7D66;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 8px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.2s ease;
+}
+
+.cta-btn:hover,
+.cta-btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #EA7D66;
+}
+
+.cta-btn:active {
+  opacity: .5;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #EA7D66;
+}
+
+.footer-nav .container{
+    justify-content: space-between;
+}
+
+.footer-nav a{
+    margin-right: 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-nav img{
+    margin-right: 16px;
+}
+
+footer .logo-line img{
+    margin: 2rem 0px;
+    width: 190px;
+    height: 32px
+}
+
+footer .text-logo a{
+    margin-right: 0px;
+}
+
+
+
+/* TABLETS */
+
+@media screen and (max-width: 811px) {
+    .hero-section{
+        margin-top: 2.4rem;
+        height: 36vh;
+    }
+
+    .hero-section h1{
+        font-size: 2.2rem;
+    }
+
+    .column-right-pad{
+    padding-right: 0px;
+    }
+
+    a.third{
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+
+    footer .full{
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .footer-nav a{
+        width: 100%;
+        margin: 0.7rem 0rem;
+    }
+
+    footer .text-logo{
+        width: 100%;
+        margin-top: 0.7rem;
+    }
+
+    footer .logo-link{
+        width: initial;
+    }
+
+
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 768px){
+    footer p.full {
+        text-align: center;
+    }
+
+    /* SINGLE */
+.single-header{
+    margin-top: 4rem;
+}
+
+.text-container{
+    max-width: 670px;
+}
+
+.text-container p{
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+}
+
+.single-header-text{
+    max-width: 800px;
+    margin-left: 0rem;
+}
+
+.single-header-text h2{
+    font-size: 2rem;
+}
+
+.single-header-text .architect-name{
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-size: 1.2rem;
+}
+
+.column-vertical-margin{
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+}
