@@ -1,18 +1,17 @@
-# arhitektur-zadatak-za-bien.studio
+# arhitektur-zadatak za bien.studio
 
 HRV:
 
 Dokumentacija za lokalnu instalaciju WordPress teme
 Preduvjeti
 
-Za postavljanje projekta lokalno, potrebno je instalirati XAMPP ili LocalWp ali meni bolje radi XAMPP, koji je besplatan i open-source paket rješenja za web poslužitelj koji uključuje Apache, MySQL i PHP, a sve je potrebno za pokretanje WordPressa lokalno. ja sam na Windows sve stavio pa bi bilo dobro da vi ovo isto napravite jer nisam siguran za MAC i ostalo.
+Za setup projekta lokalno, potrebno je instalirati XAMPP ili LocalWp ali meni bolje radi XAMPP, koji je besplatan i open-source paket rješenja za web poslužitelj koji uključuje Apache, MySQL i PHP, a sve je potrebno za pokretanje WordPressa lokalno. Ja sam na Windows sve stavio pa bi bilo dobro da vi ovo isto napravite jer nisam siguran za MAC i ostalo.
 
 1. Instalirajte XAMPP
 
     Preuzmite i instalirajte XAMPP s službene web stranice: https://www.apachefriends.org/index.html
 
- 
-Odaberite ispravnu verziju za vaš operacijski sustav i slijedite upute za instalaciju 
+    Odaberite ispravnu verziju za vaš operacijski sustav i slijedite upute za instalaciju 
 
 2. Pokrenite XAMPP usluge
 
@@ -24,7 +23,7 @@ Odaberite ispravnu verziju za vaš operacijski sustav i slijedite upute za insta
 
         MySQL (za bazu podataka)
 
-3. Kreirajte novu bazu podataka za WordPress
+3. Stvorite novu bazu podataka za WordPress
 
     Otvorite svoj preglednik i idite na http://localhost/phpmyadmin.
 
@@ -38,9 +37,9 @@ Odaberite ispravnu verziju za vaš operacijski sustav i slijedite upute za insta
 
     Preuzmite najnoviju verziju WordPressa i raspakirajte datoteke u sljedeći direktorij:
 
-        *C:\xampp\htdocs* (ili vaša instalacijska mapa XAMPP-a) — stvorite novu mapu (npr. my_site).
+        XAMPP > htdocs (ili vaša instalacijska mapa XAMPP-a) — stvorite novu mapu onda copy i paste sve što ste raspakirali od wordpress zip (wp-content, wp-admin,             wp-includes i ostlao) na novoj mapi i promjenite ime na nešto drugo (npr. my_site).
 
-5. Konfigurirajte WordPress
+6. Konfigurirajte WordPress
 
     Idite na http://localhost/my_site (zamijenite my_site s imenom vaše mape).
 
@@ -55,19 +54,9 @@ Odaberite ispravnu verziju za vaš operacijski sustav i slijedite upute za insta
         Host baze podataka: localhost
 
     Dovršite instalaciju i moći ćete se prijaviti u svoj lokalni WordPress.
-
-6. Potrebni dodaci
-
-   Instalirajte ACF dodatak ako već nije instaliran.
-
-   Idite na Plugins > Add New, potražite Advanced Custom Fields i instalirajte ga.
-
-   Napravite dva field s oznakom Architect Name i Material Type
-
-   I nazivi polja trebaju biti imenovani architect_name i material_type
    
 
-8. Instalirajte temu
+7. Instalirajte temu
 
     Idite na wp-content/themes direktorij u vašoj WordPress instalacijskoj mapi.
 
@@ -75,7 +64,7 @@ Odaberite ispravnu verziju za vaš operacijski sustav i slijedite upute za insta
 
     Kopirajte sve datoteke vaše teme (uključujući style.css, index.php i druge) u ovu mapu.
 
-9. Aktivirajte temu
+8. Aktivirajte temu
 
     Prijavite se na WordPress administratorski panel na http://localhost/my_site/wp-admin.
 
@@ -83,11 +72,26 @@ Odaberite ispravnu verziju za vaš operacijski sustav i slijedite upute za insta
 
     Pronađite svoju temu i kliknite Activate.
 
-10. Testirajte temu
+9. Testirajte temu
 
     Posjetite http://localhost/my_site da biste vidjeli svoju temu u akciji.
 
     Provjerite je li stranica za izlistavanje blog postova i stranica za pojedinačne blog postove ispravno prikazana.
+
+
+
+EXTRA: Potrebni dodaci
+
+   Instalirajte ACF dodatak ako već nije instaliran.
+
+   Idite na Plugins > Add New, potražite Advanced Custom Fields i instalirajte ga.
+
+   Napravite dva field s oznakom Architect Name i Material Type
+
+   I nazivi polja trebaju biti imenovani architect_name i material_type. architect_name drži imena kao YH2 Architects i material_type drži informaciju za ove 
+   narančaste kocke koj piše family homes i ostalo 
+
+   Ja sam stavio arhitektur.xml file koj možete import ako niste napravili blog posts i to možete na Wordpressu idite na Tools > Import. Ako ste več napravili blog        posts onda super mozete izbrisati arhitektur.xml
 
 
 ENG
@@ -128,7 +132,7 @@ To set up the project locally, you will need to install XAMPP, which is a free a
 
     Download the latest version of WordPress and extract the files to the following directory:
 
-        *C:\xampp\htdocs* (or your XAMPP installation directory) — create a new folder here (e.g., my_site).
+        XAMPP > htdocs (or your XAMPP installation directory) — create a new folder then copy and paste everything you unpacked from the wordpress zip (wp-content,             wp-admin, wp-includes and so on) into the new folder and change the name to something else (e.g. my_site).
 
 5. Configure WordPress
 
@@ -146,17 +150,8 @@ To set up the project locally, you will need to install XAMPP, which is a free a
 
     Complete the installation, and you will be able to log into your local WordPress site.
 
-6. Necessary Plugins
 
-   Install the ACF plugin if it is not already installed.
-
-   Navigate to Plugins > Add New, search for Advanced Custom Fields, and install it.
-
-   Make two fields labeled Architect Name and Material Type
-
-   And the field names need to be named architect_name and material_type
-
-8. Install the Theme
+7. Install the Theme
 
     Go to the wp-content/themes directory in your WordPress installation folder.
 
@@ -164,7 +159,7 @@ To set up the project locally, you will need to install XAMPP, which is a free a
 
     Copy all your theme files (including the style.css, index.php, etc.) into this folder.
 
-9. Activate the Theme
+8. Activate the Theme
 
     Log in to the WordPress admin panel at http://localhost/my_site/wp-admin.
 
@@ -172,8 +167,22 @@ To set up the project locally, you will need to install XAMPP, which is a free a
 
     Find your theme and click Activate.
 
-10. Test the Theme
+9. Test the Theme
 
     Visit http://localhost/my_site to see your theme in action.
 
     Make sure the blog listing and individual blog post pages are displaying correctly.
+
+
+EXTRA: Required accessories
+
+   Install the ACF plugin if it is not already installed.
+
+   Go to Plugins > Add New, search for Advanced Custom Fields and install it.
+
+   Create two fields labeled Architect Name and Material Type
+
+   And the field names should be named architect_name and material_type. architect_name holds names like YH2 Architects and material_type holds information for these 
+   orange cubes that say family homes and other things 
+
+   I put the arhitektur.xml file that you can import if you haven't made blog posts and you can do that in Wordpress by going to Tools > Import. If you have made more     blog posts then you can delete arhitektur.xml
