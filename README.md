@@ -1,5 +1,8 @@
 # arhitektur-zadatak za bien.studio
 
+front-page.php je za izlistavanje članaka
+single.php je za ovi pojedini članak (blog details)
+
 HRV:
 
 Dokumentacija za lokalnu instalaciju WordPress teme
@@ -95,6 +98,9 @@ EXTRA: Potrebni dodaci
 
 
 ENG
+
+front-page.php is for listing articles (blog)
+single.php is for these single articles (blog details)
 
 English Version:
 Local Setup Documentation for the WordPress Theme
