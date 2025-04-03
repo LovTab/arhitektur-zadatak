@@ -8,7 +8,7 @@ HRV:
 Dokumentacija za lokalnu instalaciju WordPress teme
 Preduvjeti
 
-Za setup projekta lokalno, potrebno je instalirati XAMPP ili LocalWp ali meni bolje radi XAMPP, koji je besplatan i open-source paket rješenja za web poslužitelj koji uključuje Apache, MySQL i PHP, a sve je potrebno za pokretanje WordPressa lokalno. Ja sam na Windows sve stavio pa bi bilo dobro da vi ovo isto napravite jer nisam siguran za MAC i ostalo.
+Za setup projekta lokalno, potrebno je instalirati XAMPP ili LocalWp ali meni bolje radi XAMPP, koji uključuje Apache, MySQL i PHP, a sve je potrebno za pokretanje WordPressa lokalno. Ja sam na Windows sve stavio pa bi bilo dobro da vi ovo isto napravite jer nisam siguran za MAC i ostalo.
 
 1. Instalirajte XAMPP
 
@@ -106,7 +106,7 @@ English Version:
 Local Setup Documentation for the WordPress Theme
 Prerequisites
 
-To set up the project locally, you will need to install XAMPP, which is a free and open-source cross-platform web server solution stack package. It includes Apache, MySQL, and PHP, which are required to run WordPress locally. I'm running it on Windows and i advise you do the same since I'm not sureabout MAC and the rest
+To set up the project locally, you will need to install XAMPP, which includes Apache, MySQL, and PHP, which are required to run WordPress locally. I'm running it on Windows and i advise you do the same since I'm not sureabout MAC and the rest
 
 1. Install XAMPP
 
